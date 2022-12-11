@@ -1,25 +1,23 @@
 import axios from "axios";
-
-const BASE_API_URL = "http://localhost:4000/api";
-const USER_API_URL = BASE_API_URL + "/users";
+import { BASE_API, USERS_API } from "./api";
 
 const api = axios.create({ withCredentials: true });
 
 export const findUserById = async (uid) => {
-  const response = await api.get(`${USER_API_URL}/${uid}`);
+  const response = await api.get(`${USERS_API}/${uid}`);
   const user = response.data;
   return user;
 };
 
 export const register = async (user) => {
-  const response = await api.post(`${BASE_API_URL}/register`, user);
+  const response = await api.post(`${BASE_API}/register`, user);
   const newUser = response.data;
   return newUser;
 };
 
 export const login = async (user) => {
   try {
-    const response = await api.post(`${BASE_API_URL}/login`, user);
+    const response = await api.post(`${BASE_API}/login`, user);
     return response.data;
   } catch (err) {
     console.log(err.message);
@@ -28,22 +26,22 @@ export const login = async (user) => {
 };
 
 export const logout = async () => {
-  const response = await api.post(`${BASE_API_URL}/logout`);
+  const response = await api.post(`${BASE_API}/logout`);
   return response.data;
 };
 
 export const profile = async () => {
-  const response = await api.post(`${BASE_API_URL}/profile`);
+  const response = await api.post(`${BASE_API}/profile`);
   return response.data;
 };
 
 export const findAllUsers = async () => {
-  const response = await axios.get(USER_API_URL);
+  const response = await axios.get(USERS_API);
   return response.data;
 };
 
 export const updateUserProfile = async (profile) => {
   console.log(profile);
-  const response = await axios.put(`${USER_API_URL}/${profile._id}`, profile);
+  const response = await axios.put(`${USERS_API}/${profile._id}`, profile);
   return response.status;
 };

@@ -1,7 +1,6 @@
 import axios from "axios";
 
-const BASE_API = "http://localhost:4000/api";
-const POSTS_API = "http://localhost:4000/api/posts";
+import { BASE_API, POSTS_API } from "./api";
 
 const api = axios.create({ withCredentials: true });
 
