@@ -1,5 +1,5 @@
 import axios from "axios";
-import { BASE_API, REVIEWS_API } from "./posts-service";
+import { REVIEWS_API, USERS_API } from "./api";
 
 // const REVIEWS_API = BASE_API + "/reviews";
 // "http://localhost:4000/api/reviews";
