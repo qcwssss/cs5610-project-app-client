@@ -1,0 +1,43 @@
+.custom-card {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.intro {
+  height: 210px;
+  width: 230px;
+  margin: 10px 15px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: aliceblue;
+  border: none;
+  padding-left: 30px;
+  padding-right: 5px;
+  transition: 0.3s;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.intro:hover {
+  background-color: rgb(216, 236, 255);
+  transform: translateX(0.4rem) translateY(-1rem);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 22px -2px,
+    rgba(0, 0, 0, 0.3) 5px 10px 7px -3px;
+}
+
+.intro > i {
+  color: #023e8a;
+  font-size: 2.3rem;
+  padding: 5px;
+}
+.intro > h5 {
+  font-weight: 700;
+  padding: 5px;
+}
+.intro > p {
+  font-size: 1rem;
+  padding: 5px;
+}

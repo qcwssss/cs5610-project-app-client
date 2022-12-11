@@ -1,0 +1,45 @@
+.search-box {
+  background-image: url("../../../public/images/beach.jpg");
+  height: 18rem;
+  display: flex;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  background-position: center center;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+    rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+
+.search-2 {
+  position: relative;
+  width: 100%;
+}
+
+.search-2 input {
+  height: 45px;
+  border: none;
+  width: 100%;
+  padding-left: 25px;
+  padding-right: 100px;
+}
+
+.search-2 i {
+  position: absolute;
+  top: 12px;
+  left: 3px;
+  font-size: 1.5rem;
+  color: #eee;
+}
+
+.search-2 button {
+  position: absolute;
+  right: 5px;
+  border: none;
+  top: 5px;
+}
+
+div .text-center > button {
+  height: 4rem;
+  width: 10rem;
+  border-radius: 20px;
+}
